@@ -79,7 +79,6 @@ def save(urlList, path, name=time.time()):
             response = response.json()
             url_ip = response['req']['data']['freeflowsip'][1]
             purl = response['req_0']['data']['midurlinfo'][0]['purl']
-            print(url_ip, purl)
             music = requests.get(url=url_ip+purl, headers=headers)
             print('下载成功')
             try:
@@ -125,7 +124,6 @@ def main():
     name = input('歌曲名字：')
     musicList = get_id(name)
     musicList = download_list(musicList)
-    print(musicList)
     number = int(input('请输入音乐序号:')) - 1
     musicList = musicList[number]
     print(musicList)
