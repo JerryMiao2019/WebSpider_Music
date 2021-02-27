@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 这是一个音乐爬虫
 
 **目前支持QQ音乐**
@@ -28,3 +29,15 @@ List = music.QQMusic.download_list(id)
 music.QQMusic.save(list [ 0 ] [ 'Download_parameters' ], '/DownloadMusic', 'This Is It')
 ```
 
+=======
+这是一个音乐爬虫
+==============
+目前支持QQ音乐
+--------------
+需要安装外部库requests
+--------------
+pip即可
+--------------
+以后将更新别的音乐平台爬虫等新功能
+--------------
+>>>>>>> 7dc69a844f1fb7aa3e79eb3200f863ce14a71577
