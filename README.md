@@ -25,6 +25,6 @@ List = music.QQMusic.download_list(id)
 选定歌手和歌名，
 '''
 # 调用save方法，传入Download_parameters、保存路径和曲名即可保存
-music.QQMusic.save(list [ 0 ] [ 'Download_parameters' ], '/QQMusic', 'This Is It')
+music.QQMusic.save(list [ 0 ] [ 'Download_parameters' ], '/DownloadMusic', 'This Is It')
 ```
 

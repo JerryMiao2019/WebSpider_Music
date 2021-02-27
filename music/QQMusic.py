@@ -129,7 +129,7 @@ def main():
     number = int(input('请输入音乐序号:')) - 1
     musicList = musicList[number]
     print(musicList)
-    save(musicList['Download_parameters'], path='../QQ音乐', name=musicList[ 'name' ])
+    save(musicList['Download_parameters'], path='../DownloadMusic', name=musicList[ 'name' ])
 
 if __name__ == '__main__':
     main()
