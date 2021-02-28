@@ -46,4 +46,4 @@ SaveMusic('this is it', path='../DownloadMusic', index=1)
 
 
 
-## GPL3.0
+## 协议：GPL3.0
