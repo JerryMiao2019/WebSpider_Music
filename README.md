@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 这是一个音乐爬虫
 
 **目前支持QQ音乐**
@@ -9,7 +8,7 @@
 
 1. 如果仅为使用该程序，直接打开main文件夹的QQMusic文件即可
 
-2. 如果希望将他像一个库一样导入，请参照以下步骤
+2. 如果希望将它像一个库一样导入，请参照以下步骤
 
 ```python
 import music
@@ -29,15 +28,22 @@ List = music.QQMusic.download_list(id)
 music.QQMusic.save(list [ 0 ] [ 'Download_parameters' ], '/DownloadMusic', 'This Is It')
 ```
 
-=======
-这是一个音乐爬虫
-==============
-目前支持QQ音乐
---------------
-需要安装外部库requests
---------------
-pip即可
---------------
-以后将更新别的音乐平台爬虫等新功能
---------------
->>>>>>> 7dc69a844f1fb7aa3e79eb3200f863ce14a71577
+### 新增更新：
+
+仅使用`save(name='',path='',index='')`即可下载
+
+`name`：歌曲名
+
+`path`:保存路径（默认为程序下的`DownloadMusic`）
+
+`index`：歌曲排行第几，（从零开始，默认为零）
+
+```python
+from music.QQMusic import *
+
+SaveMusic('this is it', path='../DownloadMusic', index=1)
+```
+
+
+
+## GPL3.0
