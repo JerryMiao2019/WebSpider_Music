@@ -35,6 +35,7 @@ def get_id(name):
     id = soup['data']['song']['list']
     return id
 
+
 def download_list(id):
     returnList = []
     musicList = []
@@ -59,7 +60,6 @@ def download_list(id):
     returnList = []
     for i in List:
         returnList.append(i)
-
     return returnList
 
 
@@ -116,10 +116,6 @@ def save(urlList, path, name=time.time()):
             return 'Can not download'
 
 
-
-
-
-
 def main():
     name = input('歌曲名字：')
     musicList = get_id(name)
@@ -127,7 +123,18 @@ def main():
     number = int(input('请输入音乐序号:')) - 1
     musicList = musicList[number]
     print(musicList)
-    save(musicList['Download_parameters'], path='../DownloadMusic', name=musicList[ 'name' ])
+    save(musicList['Download_parameters'], path='../DownloadMusic', name=musicList['name'])
+
+
+def SaveMusic(name, path='../DownloadMusic', index=0):
+    musicList = get_id(name)
+    musicList = download_list(musicList)
+    music = musicList[index]
+    save(music['Download_parameters'], path=path, name=music['name'])
+
+
+
+
 
 if __name__ == '__main__':
     main()
