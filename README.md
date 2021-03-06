@@ -4,7 +4,9 @@
 
 **需安装BeautifulSoup、time、os、requests等库**
 
-### 如何使用
+## QQ音乐
+
+### 如何使用？
 
 1. 如果仅为使用该程序，直接打开main文件夹的QQMusic文件即可
 
@@ -43,6 +45,10 @@ from music.QQMusic import *
 
 SaveMusic('this is it', path='../DownloadMusic', index=1)
 ```
+
+## 网易云音乐：
+
+因为网易云音乐更改了外链地址，所以暂不更新下载程序
 
 
 
