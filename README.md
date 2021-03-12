@@ -6,6 +6,8 @@
 
 ### 如何使用
 
+#### QQ音乐
+
 1. 如果仅为使用该程序，直接打开main文件夹的QQMusic文件即可
 
 2. 如果希望将它像一个库一样导入，请参照以下步骤
@@ -28,7 +30,7 @@ List = music.QQMusic.download_list(id)
 music.QQMusic.save(list [ 0 ] [ 'Download_parameters' ], '/DownloadMusic', 'This Is It')
 ```
 
-### 新增更新：
+##### 新增更新：
 
 仅使用`save(name='',path='',index='')`即可下载
 
@@ -43,6 +45,12 @@ from music.QQMusic import *
 
 SaveMusic('this is it', path='../DownloadMusic', index=1)
 ```
+
+
+
+### 网易云音乐：
+
+目前可以运行源文件，不可做库导入
 
 
 
