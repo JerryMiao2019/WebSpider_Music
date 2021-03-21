@@ -1,4 +1,4 @@
-# 这是一个音乐爬虫
+# 音乐爬虫
 
 **目前支持QQ音乐**
 
@@ -27,7 +27,7 @@ List = music.QQMusic.download_list(id)
 选定歌手和歌名，
 '''
 # 调用save方法，传入Download_parameters、保存路径和曲名即可保存
-music.QQMusic.save(list [ 0 ] [ 'Download_parameters' ], '/DownloadMusic', 'This Is It')
+music.QQMusic.save(list[0]['Download_parameters'], '/DownloadMusic', 'This Is It')
 ```
 
 ##### 新增更新：
@@ -51,6 +51,10 @@ SaveMusic('this is it', path='../DownloadMusic', index=1)
 ### 网易云音乐：
 
 目前可以运行源文件，不可做库导入
+
+*参考**[xiaoming_xiaoli](https://blog.csdn.net/xiaoming_xiaoli)**的*
+
+[网易云音乐python爬虫（Js破解）]: https://blog.csdn.net/xiaoming_xiaoli/article/details/88019016?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161630844116780262516469%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=161630844116780262516469&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-1-88019016.first_rank_v2_pc_rank_v29&amp;utm_term=%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E7%88%AC%E8%99%AB+JS
 
 
 
