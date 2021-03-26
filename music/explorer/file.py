@@ -21,7 +21,7 @@ class File():
                 a_file.append(file)
             return a_file
         except:
-            pass
+            False
 
 
     def search_file(self, filepath=None, filename=None, main_size=0):
