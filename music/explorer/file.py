@@ -1,32 +1,32 @@
 import os
 import path
 
-path = path.Path()
-
-class File():
-    def __init__(self):
-        self.m_path = path.m_path
-        self.a_file = self.find_all_file()
-
-    def find_all_file(self):
-        '''
-        it get the name of this directory
-        only can use in Unix/Windows
-        file name:return
-        '''
-        try:
-            temp_a_file = os.walk(self.m_path)
-            a_file = []
-            for file in temp_a_file:
-                a_file.append(file)
-            return a_file
-        except:
-            False
+def find_all_file(path):
+    '''
+    it get the name of this directory
+    only can use in Unix/Windows
+    file name:return
+    '''
+    try:
+        temp_a_file = os.walk(path)
+        a_file = []
+        for file in temp_a_file:
+            a_file.append(file)
+        return a_file
+    except:
+        return 0
 
 
-    def search_file(self, filepath=None, filename=None, main_size=0):
-        pass
+def get_file_path(filepath, filename):
+    if filepath == False:
+        _path = path.get_path()[1]
+    else:
+        _path = filepath
+    file_list = find_all_file(_path)
+    print(file_list[0][2][0])
 
-file =File()
-print(file.m_path)
-print(file.a_file)
+def search_file(filepath=False, filename=False, main_size=1000):
+    pass
+
+
+print(get_file_path(filepath=False, filename=False))
