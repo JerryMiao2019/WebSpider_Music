@@ -4,7 +4,9 @@
 
 **需安装BeautifulSoup、time、os、requests等库**
 
-### 如何使用
+## QQ音乐
+
+### 如何使用？
 
 #### QQ音乐
 
@@ -46,8 +48,21 @@ from music.QQMusic import *
 SaveMusic('this is it', path='../DownloadMusic', index=1)
 ```
 
+## 网易云音乐：
+
+因为网易云音乐更改了外链地址，所以暂不更新下载程序
 
 
+
+## 音乐文件管理功能：
+
+即将更新，
+
+
+
+## 协议：GPL3.0     
+
+<<<<<<< HEAD
 ### 网易云音乐：
 
 目前可以运行源文件，不可做库导入
@@ -59,3 +74,5 @@ SaveMusic('this is it', path='../DownloadMusic', index=1)
 
 
 ## 协议：GPL3.0
+=======
+>>>>>>> feature
