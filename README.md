@@ -67,8 +67,16 @@ SaveMusic('this is it', path='../DownloadMusic', index=1)
 
 ## 更改hosts附件工具（提升GitHub访问速度）：
 
-即将更新
+<a href='https://gitee.com/docmirror/dev-sidecar'><img src='https://gitee.com/docmirror/dev-sidecar/badge/star.svg?theme=dark' alt='star'/></a>
+<a href='https://github.com/docmirror/dev-sidecar'><img alt="GitHub stars" src="https://img.shields.io/github/stars/docmirror/dev-sidecar?logo=github"></a>
+
+看到更好的，不想写了
+
+
+
+#### 另外我要开始补注释了
 
 
 
 ## 协议：GPL3.0     
+
