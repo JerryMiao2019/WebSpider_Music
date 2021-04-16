@@ -48,11 +48,15 @@ from music.QQMusic import *
 SaveMusic('this is it', path='../DownloadMusic', index=1)
 ```
 
-## 网易云音乐：
-
-因为网易云音乐更改了外链地址，所以暂不更新下载程序
 
 
+### 网易云音乐：
+
+目前可以运行源文件，不可做库导入
+
+*参考**[xiaoming_xiaoli](https://blog.csdn.net/xiaoming_xiaoli)**的*
+
+[网易云音乐python爬虫（Js破解）]: https://blog.csdn.net/xiaoming_xiaoli/article/details/88019016?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161630844116780262516469%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=161630844116780262516469&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-1-88019016.first_rank_v2_pc_rank_v29&amp;utm_term=%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E7%88%AC%E8%99%AB+JS
 
 ## 音乐文件管理功能：
 
@@ -62,17 +66,3 @@ SaveMusic('this is it', path='../DownloadMusic', index=1)
 
 ## 协议：GPL3.0     
 
-<<<<<<< HEAD
-### 网易云音乐：
-
-目前可以运行源文件，不可做库导入
-
-*参考**[xiaoming_xiaoli](https://blog.csdn.net/xiaoming_xiaoli)**的*
-
-[网易云音乐python爬虫（Js破解）]: https://blog.csdn.net/xiaoming_xiaoli/article/details/88019016?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522161630844116780262516469%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=161630844116780262516469&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-1-88019016.first_rank_v2_pc_rank_v29&amp;utm_term=%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90%E7%88%AC%E8%99%AB+JS
-
-
-
-## 协议：GPL3.0
-=======
->>>>>>> feature
