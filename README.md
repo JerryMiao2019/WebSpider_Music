@@ -38,7 +38,8 @@
 
 #### 另外我要开始补注释了
 
-
+##Thanks
+本项目由JetBranins赞助相关开发工具
+![Jetbrains](https://www.jetbrains.com/?from=WebSpider_Music)
 
 ## 协议：GPL3.0     
-
