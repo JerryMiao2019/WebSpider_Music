@@ -13,7 +13,6 @@
 
 ### 网易云音乐：
 
-目前可以运行源文件，不可做库导入
 
 *参考**[xiaoming_xiaoli](https://blog.csdn.net/xiaoming_xiaoli)**的*
 
@@ -41,6 +40,6 @@
 ## Thanks
 本项目由JetBranins赞助相关开发工具
 
-![Jetbrains](https://www.jetbrains.com/?from=WebSpider_Music)
+![Jetbrains](https://github.com/JerryMiao2019/WebSpider_Music/blob/master/pycharm.svg)
 
 ## 协议：GPL3.0     
