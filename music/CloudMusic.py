@@ -86,8 +86,7 @@ def get_song_url(song_id, random_str):
     url = 'https://music.163.com/weapi/song/enhance/player/url?csrf_token='
     return post_requests(url, data)
 
-
-if __name__ == '__main__':
+def main():
     random_str = get_random_str()
     song_name = input('输入歌曲名：')
     song_list = get_song_list(song_name, random_str)
@@ -101,3 +100,6 @@ if __name__ == '__main__':
         except requests.exceptions.ConnectTimeout:  # 超时重新请求
             response = requests.get(song_url, timeout=10)
         f.write(response.content)
+
+if __name__ == '__main__':
+    main()

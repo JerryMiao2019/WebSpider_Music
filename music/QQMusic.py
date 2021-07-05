@@ -136,9 +136,5 @@ def SaveMusic(name, path='../DownloadMusic', index=0):
     music = musicList[index]
     save(music['Download_parameters'], path=path, name=music['name'])
 
-
-
-
-
 if __name__ == '__main__':
     main()
