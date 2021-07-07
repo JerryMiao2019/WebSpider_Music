@@ -2,13 +2,13 @@
 import requests
 from requests.packages import urllib3
 from urllib import parse
-import logging
 from bs4 import BeautifulSoup
 import os
 import time
 
 def get_id(name):
     w = parse.urlencode({'w': name})
+    #请求报头,可自行添加
     headers = {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36'
     }
@@ -34,7 +34,9 @@ def get_id(name):
     #print(url)
     requests.packages.urllib3.disable_warnings()
     response = requests.get(url=url, headers=headers, verify=False)
+    print(url)
     soup = response.json()
+    #获取歌曲id
     id = soup['data']['song']['list']
     return id
 
