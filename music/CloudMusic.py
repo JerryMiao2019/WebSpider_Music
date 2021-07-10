@@ -86,15 +86,14 @@ def get_song_url(song_id, random_str):
     url = 'https://music.163.com/weapi/song/enhance/player/url?csrf_token='
     return post_requests(url, data)
 
-def main():
+def main(name):
     random_str = get_random_str()
-    song_name = input('输入歌曲名：')
-    song_list = get_song_list(song_name, random_str)
+    song_list = get_song_list(name, random_str)
     id = song_list['result']['songs'][0]['id']
     song_url = get_song_url(id, random_str)['data'][0]['url']
     if not os.path.exists('../DownloadMusic'):
-        os.mkdir(song_name)  # 新建文件夹
-    with open('../DownloadMusic' + '/' + song_name + '.mp3', 'wb') as f:
+        os.mkdir(name)  # 新建文件夹
+    with open('../DownloadMusic' + '/' + name + '.mp3', 'wb') as f:
         try:
             response = requests.get(song_url, timeout=10)
         except requests.exceptions.ConnectTimeout:  # 超时重新请求
@@ -102,4 +101,5 @@ def main():
         f.write(response.content)
 
 if __name__ == '__main__':
+    name = input('输入歌曲名：')
     main()

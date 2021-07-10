@@ -121,8 +121,7 @@ def save(urlList, path, name=time.time()):
             return 'Can not download'
 
 
-def main():
-    name = input('歌曲名字：')
+def main(name):
     #name = '平凡之路'
     musicList = get_id(name)
     musicList = download_list(musicList)
@@ -139,4 +138,5 @@ def SaveMusic(name, path='../DownloadMusic', index=0):
     save(music['Download_parameters'], path=path, name=music['name'])
 
 if __name__ == '__main__':
-    main()
+    name = input('歌曲名字：')
+    main(name)

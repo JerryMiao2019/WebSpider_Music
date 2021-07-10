@@ -22,7 +22,7 @@ def get_name():
         return 'Linux/Unix'
 
 
-def get_path():
+def get_Music_path():
     '''
     get the path of this file and the path of the main file
     One is the main file's path,one is this file's path:return
@@ -31,8 +31,10 @@ def get_path():
     temp = t_file
     temp = temp.split(get_sep())
     temp_list = []
-    for i in range(0, len(temp) - 2):
-        temp_list.append(temp[i] + get_sep())
+    for i in range(0, len(temp) - 1):
+        #we should use the '/' or '\\' but not '\'
+        temp_list.append(temp[i] + '/')
     m_file = ''.join(temp_list)
     return t_file, m_file + 'DownloadMusic'
 
+print(get_Music_path())
