@@ -1,11 +1,11 @@
-from music import *
-_API = {'QQ Music':'https://y.qq.com/',
-        'CLoudMusic':'https://music.163.com/'}
-def main(name, API = 'QQ'):
-    if API == 'QQ':
+from music import CloudMusic,QQMusic
+_API = {'tencent':'https://y.qq.com/',
+        'netease':'https://music.163.com/'}
+def main(name, API = 'tencent'):
+    if API == 'tencent':
         QQMusic.main(name)
-    elif API == 'CloudMusic':
-        pass
+    elif API == 'netease':
+        CloudMusic.main(name)
 
 if __name__ == '__main__':
     main('可否冲破')

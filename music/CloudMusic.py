@@ -102,4 +102,4 @@ def main(name):
 
 if __name__ == '__main__':
     name = input('输入歌曲名：')
-    main()
+    main(name)

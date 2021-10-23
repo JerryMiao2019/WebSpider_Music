@@ -18,18 +18,23 @@ def find_all_file(path):
 
 
 def get_file_path(filename, filepath=path.get_Music_path()[1]):
-    _path = filepath
-    file_list = find_all_file(_path)
-    for i in (file_list[0][2]):
-        if i == filename:
-            return _path + r'/' + filename
-        else:
-            pass
-    return False
+    '''
+    get the whole filepath
+    :param filename: the name of th file
+    :param filepath:
+    :return:
+    '''
+    return filepath + '/' + filename
 
+def search_file(filename, filepath=path.get_Music_path()[1], main_size=1024):
+    '''
+    it search file in the filepath
+    :param filename: the name of the file
+    :param filepath: the path where is the file
+    :param main_size:
+    :return:
+    '''
+    a_file = find_all_file(filepath)
+    print(a_file)
 
-def search_file(filename=False, filepath=path.get_Music_path()[1], main_size=1024):
-    pass
-
-
-print(get_file_path('This Is It.mp3'))
+search_file('不再犹豫.mp3')
