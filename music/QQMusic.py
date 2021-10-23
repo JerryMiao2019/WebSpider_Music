@@ -55,8 +55,8 @@ def download_list(id):
         music['name'] = id[i]['name']
         music['singer'] = id[i]['singer'][0]['name']
         returnList.append(music)
-        if __name__ == '__main__':
-            print('{}.{}---{}'.format(i+1, id[i]['name'], id[i]['singer'][0]['name']))
+        #if __name__ == '__main__':
+        print('{}.{}---{}'.format(i+1, id[i]['name'], id[i]['singer'][0]['name']))
         urlList.append(url % (id[i]['mid']))
         music = {}
     for i in range(len(returnList)):

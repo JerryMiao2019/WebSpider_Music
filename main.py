@@ -8,5 +8,6 @@ def main(name, API = 'tencent'):
         CloudMusic.main(name)
 
 if __name__ == '__main__':
-    main('可否冲破')
+    name = input('歌曲：')
+    main(name,'netease')
 
