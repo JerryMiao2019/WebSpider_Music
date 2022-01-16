@@ -9,5 +9,5 @@ def main(name, API = 'tencent'):
 
 if __name__ == '__main__':
     name = input('歌曲：')
-    main(name,'netease')
+    main(name)
 
